@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {// untuk menambah aturan sendiri
+                    spacing: {
+                    13 : '3.25rem',
+                    },
+                    fontfamily: {
+                        inter : ['Inter'],
+                    },
+                    colors: {
+                        magenta: '#abc68d',
+                    },
+                },
+            },
+        };
+    </script>
+    <title>Belajar TailwindCSS</title>
+    <style type="text/tailwindcss"></style>
+</head>
+<body>
+    <h1 class="text-6xl font-bold text-center my-8"> Mari Belajar <span class="bg-gradient-to-r from-blue-600  to-teal-600 bg-clip-text text-transparent">TailwindCSS</span></h1>
+
+    <section class="mb-10 bg-gradient-to-br from-slate-400 via-yellow-300 to-indigo-200">
+        <h2 class="text-2xl text-center">Spacing</h2>
+        <div class="m-10">Margin</div>
+        <div class="py-8">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-green-300">
+        <h2>Sizing</h2>
+        <div class="w-32 h-32">Kotak 1</div>
+    </section>
+
+    <section class="mb-10 font-inter max-3-3xl mx-auto">
+        <h2 class="mb-2 text-4xl font-bold">Belajar mengenai Typography pada TailwindCSS</h2>
+        <div class="mb-4 text-lg">By Steven Chandra, 13 November 2024</div>
+        <p class="mb-4">Lorem ipsum dolor sit amet, <a href="#" class="underline font-semibold">consectetur</a> adipisicing elit. Nemo quas laborum blanditiis ipsa dicta distinctio provident et culpa veniam inventore laudantium, incidunt animi ipsum debitis harum minus quidem sed ut!</p>
+        <p>
+            <blockquote class="mb-4 italic font-text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi praesentium similique aut nulla minus ad doloremque aliquam blanditiis? Officiis tempora consequatur blanditiis ex, reiciendis delectus ullam aspernatur iste fugiat inventore."</blockquote>
+
+        </p>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quia omnis sit nisi explicabo quasi commodi possimus ipsum aut cum, quaerat, quo voluptatem perferendis tenetur non laboriosam, enim praesentium qui!</p>
+    </section>
+
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px]"
+    style="background-image: url('https://source.unsplash.com/1000x600?computer')"></div>
+    <div class="mb-96"></div>
+</body>
+</html>
